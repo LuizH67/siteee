@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170b19">
+  <meta name="description" content="Um cantinho especial feito com amor.">
+  <title>Para o amor da minha vida ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <a class="logo" href="#inicio">para <span>Ana livia</span> <b>♥</b></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="main-nav">
+      <a href="#inicio">Início</a><a href="#sobre">Voce</a><a href="#contador">Contagem</a>
+      <a href="https://open.spotify.com/playlist/3XdAkfyFXXv90c6ZMXht7F?si=c3f6724fe4a4448b&pt=1ecf6ab69244984948546f0a705b20be">Oque voce me lembra</a><a href="#galeria">Galeria</a><a href="#carta">Carta</a> <a href="https://senha123a.github.io/senha-123/">Algo a mais❤️</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse-dot"></span> feito especialmente para Ana livia</p>
+        <h1>Eu sempre <br><em>escolherei você.</em></h1>
+        <p class="hero-text">Entre tantas pessoas voce foi a que conseguiu chamar minha atenção com seu jeito de ser, seu jeito de olhar o mundo,seu jeito de lidar com as coisas tudo me chamou a atenção,e eu resolvi criar esse cantinho para voce. ❤️</p>
+        <div class="hero-buttons"><a class="button button-primary" href="#carta">Ler minha carta <span>↗</span></a><a class="button button-quiet" href="#contador">Ver a contagem ↓</a></div>
+        <div class="mini-note"><span>♥</span> uma página, mil sentimentos</div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="heart-glow">♥</div>
+        <span class="float-heart heart-a">♥</span><span class="float-heart heart-b">♡</span>
+        <span class="sparkle sparkle-a">✦</span><span class="sparkle sparkle-b">✧</span>
+        <div class="art-caption"><span>para sempre?</span><strong>Todos os dias. 💌</strong></div>
+      </div>
+      <a class="scroll-cue" href="#sobre">CONTINUE DESCENDO <span>↓</span></a>
+    </section>
+
+    <section class="section intro-section" id="sobre">
+      <div class="section-heading">
+        <p class="eyebrow">01 — o que você significa</p>
+        <h2><br>Você/<em>Você</em></h2>
+        <p>Eu quero que esse dia fique marcado na sua memoria pois eu a amo muito </p>
+      </div>
+      <div class="reason-grid">
+        <article class="reason-card"><span class="card-number">01</span><div class="reason-icon">♡</div><h3>Seu sorriso</h3><p>Tem um poder tao especial todas vez que eu vejo voce sorrindo meu dia passa a ser mais feliz pq ele da essa motivação</p></article>
+        <article class="reason-card featured"><span class="card-number">02</span><div class="reason-icon">♡</div><h3>Seu jeitinho</h3><p>Os detalhes que fazem você ser única sao os que mais me chama a atenção pois eu acho muito especial seu jeito de olhar pro mundo um jeito puro.</p></article>
+        <article class="reason-card"><span class="card-number">03</span><div class="reason-icon">♡</div><h3>Voce</h3><p>Voce e a pessoa mais pura que eu conheco,voce e a pessoa mais dedicada a tudo que eu conhecoa estudo a sua propria vida e eu acho isso muito fofo em voce </p></article>
+      </div>
+    </section>
+
+    <section class="countdown-section section" id="contador">
+      <div class="countdown-layout">
+        <div class="countdown-copy">''
+          <p class="eyebrow">02 — um dia muito especial</p>
+          <h2>O mundo comemora<br>o dia em que <em>você chegou.</em></h2>
+          <p>Estou contando os dias para que chegue esse dia especial,seu aniversário e eu quero que seja o melhor dia da sua vida</p>
+          <div class="date-setting">
+            <label for="birthday-month">Mês do aniversário</label>
+            <select id="birthday-month">
+              <option value="1">Janeiro</option><option value="2">Fevereiro</option><option value="3">Março</option>
+              <option value="4">Abril</option><option value="5">Maio</option><option value="6">Junho</option>
+              <option value="7">Julho</option><option value="8">Agosto</option><option value="9">Setembro</option>
+              <option value="10" selected>Outubro</option><option value="11">Novembro</option><option value="12">Dezembro</option>
+            </select>
+            
+          </div>
+        </div>
+        <div class="countdown-card">
+          <div class="countdown-top"><span>CONTAGEM REGRESSIVA</span><span class="tiny-heart">♥</span></div>
+          <div class="countdown-grid">
+            <div class="time-box"><strong id="days">00</strong><span>dias</span></div>
+            <div class="time-box"><strong id="hours">00</strong><span>horas</span></div>
+            <div class="time-box"><strong id="minutes">00</strong><span>minutos</span></div>
+            <div class="time-box"><strong id="seconds">00</strong><span>segundos</span></div>
+          </div>
+          <p class="countdown-message" id="countdown-message">Cada segundo nos aproxima do seu dia. 💗</p>
+          <div class="birthday-state" id="birthday-state" hidden>🎉 FELIZ ANIVERSÁRIO, MEU AMOR! 🎉</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section gallery-section" id="galeria">
+      <div class="section-heading">
+        <p class="eyebrow">04 — </p><h2>Oque eu acho <br><em>Mais lindo em ti.</em></h2>
+        <p><code></code></p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-photo large"><img src="seu sorriso.jpeg" alt="Uma lembrança especial" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="photo-placeholder"><span>♡</span><b>FOTO 01</b><small>imagens/foto1.jpg</small></div><figcaption>Seu sorriso. Esse seu sorrisp bobo toda vez que voce solta ja alegra o dia de qualquer um </figcaption></figure>
+        <figure class="gallery-photo"><img src="olhos.jpeg" alt="Um momento feliz" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="photo-placeholder"><span>✧</span><b>FOTO 02</b><small>imagens/foto2.jpg</small></div><figcaption>Seus olhos. Esse olhos sao tao fofinho e a coisa mais linda que eu ja vi ainda mas quando eles tao brilhando</figcaption></figure>
+        <figure class="gallery-photo"><img src="VOCE.jpeg"Uma lembrança do casal" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="photo-placeholder"><span>♥</span><b>FOTO 03</b><small>imagens/foto3.jpg</small></div><figcaption>Voce. Ai vei eu sou todo apaixonado em voce. Em seu estilo, na sua voz,nesse cabelo lindo que voce tem e eu te acho perfeita em todos os aspectos </figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="carta">
+      <div class="letter">
+        <div class="letter-top"><span>UMA CARTA PARA VOCÊ</span><span>♥ ♥ ♥</span></div>
+        <div class="letter-seal">♥</div>
+        <p class="eyebrow">para a pessoa mais especial da minha vida</p>
+        <h2>Meu amor,</h2>
+        <p>Desde o dia em que te conheci, você tem sido a melhor pessoa do mundo para mim. Aos meus olhos, você é uma menininha tão especial, tão linda e tão perfeita </p>
+        <p>Voce e minha menininha,minha bebe eu sempre cuidarei de voce e darei o meu melhor para que eu possa te ver feliz</p>
+        <p>Eu sempre estarei aqui nos momentos bons ruins e eu tambem sempre estarei te apoiando se algo for dificil.Eu quero que voce saiba que eu te sempre vou te proteger e estarei aqui ❤️ </p>
+        <p class="signature">Com todo o meu amor, <br><strong>Luiz Henrique. ❤️</strong></p>
+      </div>
+    </section>
+
+    <section class="surprise-section section" id="surpresa">
+      <p class="eyebrow">05 — só mais uma coisinha</p><h2>Tem uma surpresa<br>esperando por você.</h2>
+      <p>Prepare o coração e aperte o botão. 💗</p>
+      <button class="button button-light" id="surprise-button">Abrir minha surpresa ✨</button>
+      <div class="surprise-message" id="surprise-message" hidden>
+        <div class="surprise-emoji">💖</div><h3>Você é um presente enviado por Deus .</h3>
+        <p>Eu te amo muito meu amor</p>
+        <p>PARABENS MEU AMOR MUITOS ANOS DE VIDA QUE DEUS TE ABENCOE E TE PROTEJA SEMPRE EU SOU UMAS DAS PESSOAS QUE MAIS QUEREM TE VER FELIZ POIS VOCE E MUITO ESPECIAL NAO SO PRA MIM MAS PRO SEU PAI,RODOLFINHO,SUA MAE,ERCI,PARA SUA MELHOR AMIGA,A ANNIIII, PARA TODOS NOIS VOCE VALE MAIS QUE OURO E EU QUERO QUE ESSE DIA SEJA MUITO ESPECIAL PARA VOCE POIS EU A AMO MUITO!!!!! </p>
+        <P>PARABENS PELO SEU DIAAAA!!!!</P>
+        <p>Com muito amor Luiz Henrique</p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="footer-logo">feito com <span>♥</span> amor</div><p>Uma página especial para uma pessoa ainda mais especial.</p><small>Feito com carinho, para você,Ana Livia De Oliveira Mello</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
